@@ -34,7 +34,7 @@ Framework components:
 
 
 ## Core Event Loop
-The event loop in `src/core.py` is the runtime coordinator. `Core.run` connects the WebSocket, subscribes to `global/new-bet`, and hands each message to `on_bet`, which fetches market context, evaluates all strategies concurrently, and places resulting bets through `ManifoldClient`. Errors and placed bets are logged via the CSV logger in `src/logger.py`, and recent counterbets are tracked to avoid immediate re-engagement.
+The event loop in `src/core.py` is the runtime coordinator. `Core.run` connects the WebSocket, subscribes to `global/new-bet`, and hands each message to `on_bet`, which fetches market context, evaluates all strategies concurrently, and places resulting bets through `ManifoldClient`. Errors and placed bets are logged via the CSV logger in `src/logger.py`.
 
 Flow at a glance:
 - Parse each incoming bet batch into `Bet` objects, then load the market and recent bet history.
