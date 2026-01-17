@@ -705,7 +705,7 @@ class ManifoldClient:
         """Request the daily mana loan."""
         # This endpoint is not part of the documented API and omits the `/v0`
         # prefix.
-        return await self._make_request('request-loan', undocumented=True)
+        return await self._make_request('claim-free-loan', undocumented=True)
 
     async def get_transactions(
         self,
