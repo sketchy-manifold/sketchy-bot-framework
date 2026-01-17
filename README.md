@@ -38,8 +38,8 @@ The event loop in `src/core.py` is the runtime coordinator. `Core.run` connects 
 
 Flow at a glance:
 - Parse each incoming bet batch into `Bet` objects, then load the market and recent bet history.
-- Call each strategy's `evaluate_and_propose` with `recent_counterbets`, merge overlapping proposals by contract/answer/outcome, and compute latency for logging.
-- Enforce multiple-choice `answer_id` requirements, place limit orders with `BetConfig` settings, log `PlaceBetEvent`, and prune stale counterbet records.
+- Call each strategy's `evaluate_and_propose`, merge overlapping proposals by contract/answer/outcome, and compute latency for logging.
+- Enforce multiple-choice `answer_id` requirements, place limit orders with `BetConfig` settings, and log `PlaceBetEvent`.
 
 
 ## Installation
