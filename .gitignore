@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project-specific
+*.knowledge.md
+knowledge.md
+**/knowledge.md
+config/api_config_real.py
+tests/test_config.py
+.env
+
+# Keep template files
+!config/api_config.template.py
+!tests/test_config.template.py
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+.coverage
+htmlcov/
